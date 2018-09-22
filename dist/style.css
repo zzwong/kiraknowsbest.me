@@ -1,0 +1,491 @@
+html {
+  background: white;
+  color: rgba(18, 18, 18, .8);
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  min-width: 450px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  width: 100vw;
+  height: 42px;
+  line-height: 42px;
+}
+
+.spacer-large {
+  flex: 12;
+}
+
+.spacer-2 {
+  flex: 2;
+}
+
+.spacer-3 {
+  flex: 3;
+}
+
+.spacer-small {
+  flex: 1;
+}
+
+.navbar-option {
+  flex: 1;
+  margin: auto;
+  padding: 0 5px 0 5px;
+  line-height: 18px;
+  font-size: 18px;
+  border-left: 1px solid #ececec;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(18, 18, 18, .8);
+  transition: 0.5s cubic-bezier(0.57, 1.34, 0.65, 1.17);
+  font-weight: 300;
+}
+
+.navbar-option:nth-child(2) {
+  border-left: none;
+}
+
+.navbar-option.active {
+  color: rgba(213, 131, 0, .9);
+}
+
+/* home page */
+.homepage {
+  padding: 30px 60px 30px 60px;
+}
+
+h2 {
+  text-align: center;
+  color: rgba(213, 131, 0, .9);
+}
+
+.homepage-blurb {
+  text-align: center;
+  display: flex;
+}
+
+.homepage-blurb > .blurb-content {
+  flex: 5;
+  padding: 30px;
+  border: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+}
+
+.homepage-skills > .header {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(213, 131, 0, .9);
+}
+
+.homepage-skills > .list-item {
+  text-align: center;
+}
+
+.homepage-skills > .list-item > .bullet {
+  background: rgba(213, 131, 0, .9);
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  margin-right: 15px;
+}
+
+/* info page */
+.info-page {
+  padding: 30px 60px 30px 60px;
+}
+
+.info-page-content {
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  border: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+}
+
+.externalLink {
+  border-radius: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+  padding: 30px;
+  flex: 2;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* game page */
+.game-page {
+  padding: 30px 60px 30px 60px;
+  min-width: 450px;
+  overflow: hidden;
+  display: block;
+}
+
+.game-page-content {
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  border: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+}
+
+.game-option {
+  border-radius: 5px;
+  padding: 15px;
+  flex: 2;
+  background: rgba(213, 131, 0, .5);
+  cursor: pointer;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.game-option:hover {
+  background: rgba(213, 131, 0, .9);
+}
+
+/* minesweeper */
+.minesweeper-container {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.minesweeper-header {
+  text-align: center;
+}
+
+.minesweeper-row {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  display: block;
+  height: 30px;
+}
+
+.minesweeper-cell {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 30px;
+}
+
+.minesweeper-unvisited {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  background: rgb(189, 189, 189);
+  border: 1px solid #999;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
+  transition: .5s;
+}
+
+.minesweeper-unvisited:hover {
+  background: rgb(150, 150, 150);
+}
+
+.minesweeper-visited {
+  background: rgb(180, 180, 180);
+  border: 1px solid #7b7b7b;
+}
+
+.minesweeper-0 {
+  color: rgb(180, 180, 180);
+}
+
+.minesweeper-1 {
+  color: blue;
+}
+
+.minesweeper-2 {
+  color: green;
+}
+
+.minesweeper-3 {
+  color: red;
+}
+
+.minesweeper-4 {
+  color: rgb(6, 0, 132);
+}
+
+.minesweeper-5 {
+  color: rgb(132, 0, 0);
+}
+
+.minesweeper-6 {
+  color: rgb(4, 126, 126);
+}
+
+.minesweeper-7 {
+  color: black;
+}
+
+.minesweeper-8 {
+  color: rgb(117, 117, 117);
+}
+
+.minesweeper-controls {
+  margin: 15px;
+  display: flex;
+}
+
+.minesweeper-control-btn {
+  border: 1.5px solid rgba(18, 18, 18, .8);
+  background-color: rgba(213, 131, 0, .5);
+  border-radius: 2.5px;
+  height: 40px;
+  min-width: 50px;
+  flex: 1;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.minesweeper-control-btn:hover {
+  background: rgba(213, 131, 0, .9)
+}
+
+.minesweeper-control-btn:focus {
+  outline: none;
+}
+
+.minesweeper-time {
+  flex: 1;
+  text-align: right;
+  line-height: 40px;
+  font-size: 18px;
+  text-overflow: hidden;
+  color: rgba(213, 131, 0, .9);
+}
+
+/* music page */
+.music-main-wrapper {
+  padding: 30px 60px 30px 60px;
+  min-width: 450px;
+  overflow: hidden;
+  display: block;
+}
+
+.music-description {
+  text-align: center;
+  flex: 5;
+  padding: 30px;
+  border: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+}
+
+.music-hidden {
+  display: none;
+}
+
+.music-control-panel {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 70vw;
+  min-width: 450px;
+}
+
+.music-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20vw;
+  height: 10px;
+  border-radius: 5px;
+  background: #ccc;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 15px;
+}
+
+.music-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(213, 131, 0, .9);
+  cursor: pointer;
+}
+
+.music-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(213, 131, 0, .9);
+  cursor: pointer;
+}
+
+.music-slider:hover {
+  opacity: 1;
+}
+
+.music-step-row {
+  border-top: 2px solid rgba(18, 18, 18, .6);
+  width: 63.5vw;
+  min-width: 450px;
+  padding-bottom: 10px;
+  transition: .55s;
+}
+
+.music-step-row:last-of-type {
+  border-top: 2px solid rgba(18, 18, 18, .6);
+  border-bottom: 2px solid rgba(18, 18, 18, .6);
+}
+
+.music-step {
+  width: 5vw;
+  min-width: 25px;
+  margin: 0 1.25vw 0 1.25vw;
+  height: 5vw;
+  min-height: 25px;
+  background-color: rgba(180, 180, 180, .8);
+  border: 1.5px solid rgba(18, 18, 18, .8);
+  display: inline-block;
+  cursor: pointer;
+  transition: .55s;
+}
+
+.music-active {
+  background: rgba(213, 131, 0, .5);
+  border-color: rgba(100, 50, 25, .5);
+}
+
+.music-btn {
+  border: 1.5px solid rgba(18, 18, 18, .8);
+  border-radius: 2.5px;
+  height: 40px;
+  width: 50px;
+  color: #ddd;
+  display: inline-block;
+  padding: 5px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.music-play-btn {
+  background-color: rgba(15, 132, 15, .9);
+}
+
+.music-pause-btn {
+  background-color: rgba(213, 131, 0, .9);
+}
+
+.music-slow-btn {
+  background-color: rgba(213, 131, 0, .9);
+  margin-left: 15px;
+}
+
+.music-fast-btn {
+  background-color: rgba(213, 131, 0, .9);
+  margin-left: 15px;
+}
+
+/* Projects */
+
+.projects-page {
+  padding: 30px 60px 30px 60px;
+  min-width: 610px;
+  overflow: hidden;
+  display: block;
+}
+
+.projects-page-content {
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  border: 1px solid rgba(180, 180, 180, .5);
+  border-radius: 3px;
+}
+
+.project-option {
+  border-radius: 5px;
+  padding: 15px;
+  flex: 2;
+  background: rgba(213, 131, 0, .5);
+  cursor: pointer;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.project-option:hover {
+  background: rgba(213, 131, 0, .9);
+}
+
+/* Video Looper */
+
+.video-looper-container {
+  /* main container for video loop components */
+  width: 560px;
+  height: 315px;
+}
+
+.play-icon {
+  box-sizing: border-box;
+  width: 74px;
+  height: 74px;
+  margin: 120.5px 0 0 250px;
+  border-style: solid;
+  border-width: 37px 0px 37px 50px;
+  border-color: transparent transparent transparent rgb(213, 131,0);
+}
+
+.looper-player {
+  position: absolute;
+  z-index: 1;
+  width: 560px;
+  height: 315px;
+  background: black;
+}
+
+.paused {
+  width: 560px;
+  height: 315px;
+}
+
+.looper-thumb {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: rgb(213, 131, 0);
+  position: absolute;
+  top: 475px;
+  z-index: 3;
+}
+
+.looper-selection {
+  position: absolute;
+  height: 10px;
+  top: 485px;
+  background: rgba(213, 131, 0, .8);
+  z-index: 2;
+}
+
+.video-looper-description {
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}

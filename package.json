@@ -1,0 +1,34 @@
+{
+  "name": "kiraknowsbest.me",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiraknowsbest/kiraknowsbest.me.git"
+  },
+  "author": "kiraknowsbest",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kiraknowsbest/kiraknowsbest.me/issues"
+  },
+  "homepage": "https://github.com/kiraknowsbest/kiraknowsbest.me#readme",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
