@@ -439,6 +439,7 @@ h2 {
   /* main container for video loop components */
   width: 560px;
   height: 315px;
+  margin-bottom: 100px;
 }
 
 .play-icon {
@@ -488,4 +489,9 @@ h2 {
   position: absolute;
   top: 500px;
   left: 50px;
+}
+
+.code-display {
+  text-align: left !important;
+  white-space: pre !important;
 }
