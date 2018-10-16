@@ -507,7 +507,10 @@ export default Minesweeper
           ? this.displayBoard()
           : null
         }
-        <div ref={el => this._code = el} className="code-display"/>
+        <code>
+          <div ref={el => this._code = el} className="code-display">
+          </div>
+        </code>
       </div>
     )
   }

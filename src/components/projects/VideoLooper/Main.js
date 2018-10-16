@@ -469,7 +469,10 @@ export default YoutubeVideo
             <p>Moving the two orange circles will set the start and stop points for the looping video!</p>
           </div>
         </div>
-        <div ref={el => this._code = el} className="code-display"/>
+        <code>
+          <div ref={el => this._code = el} className="code-display">
+          </div>
+        </code>
       </div>
     )
   }

@@ -341,7 +341,10 @@ export default MusicInterface
           <div onClick={this.toggleActiveClass} className="music-step music-step7" data-step="7" data-key="snare"></div>
           <div onClick={this.toggleActiveClass} className="music-step music-step8" data-step="8" data-key="snare"></div>
         </div>
-        <div ref={el => this._code = el} className="code-display"/>
+        <code>
+          <div ref={el => this._code = el} className="code-display">
+          </div>
+        </code>
       </div>
     )
   }
